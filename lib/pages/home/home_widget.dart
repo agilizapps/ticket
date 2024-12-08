@@ -103,6 +103,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

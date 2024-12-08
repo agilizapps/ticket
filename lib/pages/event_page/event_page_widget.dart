@@ -137,6 +137,8 @@ class _EventPageWidgetState extends State<EventPageWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
